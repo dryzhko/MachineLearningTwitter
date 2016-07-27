@@ -4,10 +4,14 @@ Tweets are marked as irrelivent(irr) by the classifier if they do not mention ge
 
 classifier_test:
 tests classifiers, naive bayes, svc, and logistic, 10 fold cross validation, gives scores for accuracy, precision, and recall.
+  python classifier_test.py -c N
+  python classifier_test.py -c L
+  python classifier_test.py -c S
 
 classify_new_data:
 opens train_set_1.json to train classifier
 loops through files in new_dir, classifies, outputs in classified_tweets
+  python classify_new_data.py
 
 
 compare_official_classified:
